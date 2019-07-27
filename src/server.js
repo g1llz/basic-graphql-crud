@@ -9,7 +9,7 @@ mongoose.connect('mongodb://localhost:27017/graphqlcrud', {
 
 const server = new GraphQLServer({
   typeDefs: path.resolve(__dirname, 'schema.graphql'),
-  resolvers
+  resolvers,
 });
 
 server.start();
